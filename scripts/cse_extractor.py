@@ -33,11 +33,12 @@ DB_CONFIG = {
 }
 
 CSE_STOCKS = [
-    {"symbol": "EXPO",  "company": "Expolanka Holdings (Global)",      "sector": "Logistics"},
-    {"symbol": "HDB",   "company": "HDFC Bank (Regional Banking)",     "sector": "Banking"},
-    {"symbol": "TEA",   "company": "iPath Bloomberg Softs (Tea/Agri)", "sector": "Agriculture"},
-    {"symbol": "STER",  "company": "Sterling Infrastructure",          "sector": "Infrastructure"},
-    {"symbol": "CEYL",  "company": "Ceylon Graphite Corp",             "sector": "Mining"},
+    {"symbol": "EXPO",  "company": "Expolanka Holdings (Global)",    "sector": "Logistics"},
+    {"symbol": "HDB",   "company": "HDFC Bank (Regional Banking)",   "sector": "Banking"},
+    {"symbol": "STER",  "company": "Sterling Infrastructure",        "sector": "Infrastructure"},
+    {"symbol": "GOOG",  "company": "Alphabet Inc (Tech - Global)",   "sector": "Technology"},
+    {"symbol": "MSFT",  "company": "Microsoft Corp (Tech - Global)", "sector": "Technology"},
+    {"symbol": "ORIT",  "company": "Oritani Financial (Finance)",    "sector": "Finance"},
 ]
 
 def _safe_float(val):
