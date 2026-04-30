@@ -88,15 +88,17 @@ CSE-Stock-Pipeline/
 ## Getting Started
 
 > **Note on Environment:** This pipeline was developed and deployed entirely on
-> GitHub Codespaces rather than a local machine. The Colombo Stock Exchange
-> official API (www.cse.lk/api/) and Yahoo Finance were both evaluated as data
-> sources but returned errors or null data when called from cloud environments.
-> Docker Desktop requires virtualisation support which was unavailable on the
-> local machine used for this project. GitHub Codespaces provided a fully
-> configured Linux environment with Docker pre-installed, allowing the complete
-> Airflow and PostgreSQL stack to run without any local setup. The pipeline
-> behaves identically whether run on Codespaces or a local machine with Docker
-> installed — only the access URL for port 8080 differs.
+> GitHub Codespaces rather than a local machine due to insufficient disk space
+> on the local machine to install and run Docker Desktop. Docker Desktop
+> requires a minimum of 4GB of RAM and several gigabytes of disk space for
+> the application itself plus the container images. GitHub Codespaces provided
+> a fully configured cloud-based Linux environment with Docker pre-installed,
+> eliminating the need for any local installation. The Airflow webserver,
+> scheduler, and PostgreSQL database all ran as Docker containers inside
+> Codespaces and were accessed via the forwarded port URLs provided by the
+> Codespaces interface. The pipeline behaves identically whether run on
+> Codespaces or a local machine with sufficient disk space and Docker installed
+> — only the method of accessing port 8080 differs.
 
 ### Prerequisites
 
